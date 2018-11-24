@@ -34,13 +34,13 @@ TODO: Add long description of the pod here.
 
 
     s.subspec 'IJKMediaFramework' do |ss|
-        ss.vendored_frameworks = 'Classes/IJKMediaFramework/FrameWorkText.framework'
+        ss.vendored_frameworks = 'HHplayerText/Classes/IJKMediaFramework/FrameWorkText.framework'
         ss.frameworks = 'UIKit', 'AVFoundation'
     end
     
     s.subspec 'ViewAdd' do |ss|
-        ss.source_files = 'Classes/ViewAdd/**/*.{h,m}'
-        ss.public_header_files = 'Classes/ViewAdd/**/*.h'
+        ss.source_files = 'HHplayerText/Classes/ViewAdd/**/*.{h,m}'
+        ss.public_header_files = 'HHplayerText/Classes/ViewAdd/**/*.h'
        # ViewAdd.dependency 'ZFPlayer/Core'
     end
 
