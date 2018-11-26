@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHplayerText'
-  s.version          = '0.8.0'
+  s.version          = '0.9.0'
   s.summary          = 'A short description of HHplayerText.'
 
 # This description is used to generate tags and improve search results.
@@ -35,6 +35,15 @@ fsdfafasfasfasdfadsfd.
 
     s.subspec 'IJKMediaFramework' do |ss|
         ss.vendored_frameworks = 'HHplayerText/Classes/IJKMediaFramework/FrameWorkText.framework'
+        ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
+        #ss.libraries = 'libc++.tb', 'libz.tbd', 'libbz2.tbd', 'libstdc++.tbd'
+        ss.libraries = 'c', 'z', 'bz2', 'stdc++'
+
+    end
+
+
+    s.subspec 'IJKText' do |ss|
+        ss.vendored_frameworks = 'HHplayerText/Classes/IJKText/FrameWorkText.framework'
         ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
         #ss.libraries = 'libc++.tb', 'libz.tbd', 'libbz2.tbd', 'libstdc++.tbd'
         ss.libraries = 'c', 'z', 'bz2', 'stdc++'
