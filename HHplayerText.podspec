@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHplayerText'
-  s.version          = '0.6.0'
+  s.version          = '0.7.0'
   s.summary          = 'A short description of HHplayerText.'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,10 @@ fsdfafasfasfasdfadsfd.
           ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
     end
     
- 
+     s.subspec 'HHDebugS' do |ss|
+        ss.vendored_frameworks = 'HHplayerText/Classes/HHDebugS/FrameWorkText.framework'
+        ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
+    end
 
     s.subspec 'ViewAdd' do |ss|
         ss.source_files = 'HHplayerText/Classes/ViewAdd/**/*.{h,m}'
