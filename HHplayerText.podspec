@@ -35,7 +35,12 @@ TODO: Add long description of the pod here.
 
     s.subspec 'IJKMediaFramework' do |ss|
         ss.vendored_frameworks = 'HHplayerText/Classes/IJKMediaFramework/FrameWorkText.framework'
-        ss.frameworks = 'UIKit', 'AVFoundation'
+          ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
+    end
+    
+    s.subspec 'HHIJKDebug' do |ss|
+        ss.vendored_frameworks = 'HHplayerText/Classes/HHIJKDebug/FrameWorkText.framework'
+          ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
     end
     
     s.subspec 'ViewAdd' do |ss|
