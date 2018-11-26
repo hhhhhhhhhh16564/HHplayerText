@@ -36,7 +36,9 @@ fsdfafasfasfasdfadsfd.
     s.subspec 'IJKMediaFramework' do |ss|
         ss.vendored_frameworks = 'HHplayerText/Classes/IJKMediaFramework/FrameWorkText.framework'
         ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
-        ss.libraries = 'libc++.tb', 'libz.tbd', 'libbz2.tbd', 'libstdc++.tbd'
+        #ss.libraries = 'libc++.tb', 'libz.tbd', 'libbz2.tbd', 'libstdc++.tbd'
+        ss.libraries = 'c', 'z', 'bz2', 'stdc++'
+
     end
 
     s.subspec 'ViewAdd' do |ss|
