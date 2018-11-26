@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+fsdfafasfasfasdfadsfd.
                        DESC
 
   s.homepage         = 'https://github.com/hhhhhhhhhh16564/HHplayerText'
@@ -38,10 +38,7 @@ TODO: Add long description of the pod here.
           ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
     end
     
-    s.subspec 'HHIJKDebug' do |ss|
-        ss.vendored_frameworks = 'HHplayerText/Classes/HHIJKDebug/FrameWorkText.framework'
-          ss.frameworks = 'AudioToolbox', 'UIKit', 'CoreGraphics', 'AVFoundation', 'CoreMedia','CoreVideo','MediaPlayer','MobileCoreServices', 'OpenGLES', 'QuartzCore', 'VideoToolbox'
-    end
+ 
 
     s.subspec 'ViewAdd' do |ss|
         ss.source_files = 'HHplayerText/Classes/ViewAdd/**/*.{h,m}'
